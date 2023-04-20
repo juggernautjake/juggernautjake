@@ -1,7 +1,7 @@
 var pos = 0;
 
 //PacMan figures Array
-var pacArray = ["PacMan1.png", "PacMan2.png", "PacMan3.png", "PacMan4.png"];
+var pacArray = ["https://juggernautjake.github.io/PacMan1.png", "https://juggernautjake.github.io/PacMan2.png", "https://juggernautjake.github.io/PacMan3.png", "https://juggernautjake.github.io/PacMan4.png"];
 
 
 var direction = 0;
