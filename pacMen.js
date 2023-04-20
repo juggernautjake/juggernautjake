@@ -1,7 +1,7 @@
 var pos = 0;
 
 //PacMan figures Array
-var pacArray = ["assets/PacMan1.png", "assets/PacMan2.png", "assets/PacMan3.png", "assets/PacMan4.png"];
+var pacArray = ["PacMan1.png", "PacMan2.png", "PacMan3.png", "PacMan4.png"];
 
 
 var direction = 0;
