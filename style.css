@@ -79,6 +79,11 @@ body::before {
       width: 50%;
     }
   }
-
+  .post:not(:last-child){
+    margin-bottom: 50px;
+  }
+  .hide{
+      display: none;
+  }
 
 

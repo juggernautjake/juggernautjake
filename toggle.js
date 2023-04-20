@@ -1,33 +1,20 @@
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+let noOfCharac = 200;
+let contents = document.querySelectorAll(".content");
+contents.forEach(content => {
+    //If text length is less that noOfCharac... then hide the read more button
+    if(content.textContent.length < noOfCharac){
+        content.nextElementSibling.style.display = "none";
+    }
+    else{
+        let displayText = content.textContent.slice(0,noOfCharac);
+        let moreText = content.textContent.slice(noOfCharac);
+        content.innerHTML = `${displayText}<span class="dots"></span><span class="hide more">${moreText}</span>`;
+    }
+});
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
+function readMore(btn){
+    let post = btn.parentElement;
+    post.querySelector(".dots").classList.toggle("hide");
+    post.querySelector(".more").classList.toggle("hide");
+    btn.textContent == "Read More" ? btn.textContent = "Read Less" : btn.textContent = "Read More";
 }
-
-var section = document.querySelector("span");
-
-gsap.set(span, { autoAlpha: 1 });
-
-var splitHide = new SplitText(span, { type: "words", wordsClass: "hide" });
-var split = new SplitText(span, {
-  type: "words,lines",
-  wordsClass: "words",
-  linesClass: "lines"
-});
-
-gsap.from(split.words, {
-  repeat: -1,
-  duration: 1,
-  yPercent: 100,
-  stagger: 0.3
-});
