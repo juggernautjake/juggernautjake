@@ -40,39 +40,11 @@ body::before {
     --bs-btn-active-border-color: #{shade-color($bd-violet, 20%) !important};
   }
 
-  .slow {
-    display: inline-block;
-    vertical-align: bottom;
-    max-width: 0.5rem;
-    overflow: hidden;
-    animation: slow 2s ease forwards;
-  }
-  
-  @keyframes slow {
-    from {
-      max-width: 0.5rem;
-    }
-    to {
-      max-width: 3rem;
-    }
-  }
 
   #more {
     display: none;
-    vertical-align: bottom;
-    max-width: 0.5rem;
-    overflow: hidden;
-    animation: slow 2s ease forwards;
   }
 
-  @keyframes more {
-    from {
-      max-width: 0.5rem;
-    }
-    to {
-      max-width: 3rem;
-    }
-  }
 
   @media (min-width: 768px) {
     .news-input {
