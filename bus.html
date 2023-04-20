@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="toggle.js"></script>
 
   <link rel="stylesheet" href="style.css" />
   <title>Jacob's Portfolio</title>
@@ -16,7 +18,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-primary-subtle py-2 fixed-top">
     <div class="container-fluid">
-      <a href="index.html" class="navbar-brand btn-round-dotted btn-navbar-brand-primary-border">
+      <a href="#" class="navbar-brand btn-round-dotted btn-navbar-brand-primary-border">
         <h3>Jacob's Coding Portfolio</h3>
       </a>
 
@@ -27,8 +29,13 @@
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav ms-auto ">
           <li class="nav-item">
-            <a href="repositories.html" class="nav-link btn-round btn-navbar-dark">
+            <a href="#Repositories" class="nav-link btn-round btn-navbar-dark">
               <h5>Repositories</h5>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#About Jacob" class="nav-link btn-round btn-navbar-dark">
+              <h5>Personal Life</h5>
             </a>
           </li>
           <li class="nav-item">
@@ -43,53 +50,18 @@
 
 
 
-
-  <section id="About Jacob" class="p-5 bg-dark text-light">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md p-5">
-          <h2>More About Jacob</h2>
-          <p class="lead text">
-            <h5>Early Life and Academics</h5> I was born in Bermingham Alabama in January of 1996 to my father, Dr.
-            Henry S. Maddux,
-            and mother, Sena M. Maddux, as the youngest of five children. In 2000, when I was 4 years old, our family
-            then moved to
-            Huntsville, Texas, where I spend most of my formative years growing up. Over the next 10 years my father
-            worked at Sam
-            Houston State University and my mother stayed home and educated me and my siblings. While in Huntsville I
-            got envoled
-            with sports and theater, which are both still important elements in my life today. In my teenage years I
-            moved to Belton, Texas,
-            where I continued playing sports and performing in musical theater productions. After graduating highschool,
-            I attended
-            Temple College in hopes of completing my general education and transferring to a larger university. While
-            attending at Temple
-            College I worked several jobs ranging from animal husbandry to being the head grounds keeper and event
-            manager at a local
-            wedding venue. Once I had completed the prerequsite courses for transfer, my pursuit to enter a major
-            universtiy paid off as
-            I was admitted to the Department of Electrical Engineering at Texas A&M University. It was there I became
-            aware of a passion for
-            software development and began tinkering with different coding languages such as Python, C#, C++, JavaScript
-            and others. As of today,
-            I have grown much more adept at coding in theses languages and I still continue to develop my programming
-            abilities inside and
-            outside of formal educational opportunities<span id="Pacdots">..ddddddddddddddd.</span><span id="Pacmore">.
-              Hobbies: In my spare time I like to play sports and exercise regularly. I also play RPGs and some video
-              games with friends.
-              I have also have gotten into the world of 3d-printing which I have grown to enjoy very much.</span>
-              
-          </p>
-          <button onclick="myFunction()" class="btn-round btn-light mt-3" id="PacmyBtn">Read more</button>
-          
-
-        </div>
-        <div class="col-md">
-          <img src="images/bioPic1.jpg" class="img-fluid btn-round-dotted border bg-primary-subtle py-3" alt="A picture of Jacob Maddux serving strawberries covered in white chocolate." />
-        </div>
-      </div>
+  <!-- Video -->
+  <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    <div class="container-fluid">
+      <h1 style="text-align:center;">About Me!</span></h1>
+      <div class="videoWrapper"><iframe class="p-3 bg-primary border border-primary rounded-3"
+          src="https://www.youtube.com/embed/rDNdFHBqxls" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen="allowfullscreen"></iframe></div>
+    </div>
     </div>
   </section>
+
 
   
 
@@ -212,7 +184,6 @@
   <!-- Modal -->
   <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
     <script src="js/bootstrap.bundle.js"></script>
-    <script src="PacMenFuncts.js"></script>
 </body>
 
 </html>
